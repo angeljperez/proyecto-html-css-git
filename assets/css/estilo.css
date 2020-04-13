@@ -5,7 +5,36 @@
 }
 
 body{
-    background-color: black;
+    background-color:white;
+    font-family: 'Lato', sans-serif;
+}
+/*********************************************************
+icono inicio
+*********************************************************/
+.posicion-inicio{
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    background-color:brown;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.posicion-inicio .icono_inicio:hover {
+    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 
 /************************************************************
@@ -15,22 +44,107 @@ CLASE HEADER
     background-image:url("../img/header_imagen.jpg") ;
     width: 100%;
     height: 800px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    padding: 10px;
+    color: white;
+   
+   
 }
 
-.header .header-menu a {
-   font-size: 24px;
-  }
+
+.header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+.header nav ul a{
+    margin:2px;
+    padding: 1px;
+}
+
+.header nav ul a:hover{
+    font-size: 20px;
+    border: 1px solid white;
+}
+
+
 
 /************************************************************
 CLASE Hoteles
 ************************************************************/
 
 .hoteles{
-    background-color: black;
+    background-color: white;
     height: 800px;
+    box-sizing: border-box;
+    
+}
+.hoteles h1{
+    font-size: 60px;
+    text-align: center;
+}
+.hoteles .carts{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hoteles .carts section{
+    margin:10px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.hoteles .carts section:hover{
+    
+}
+
+.hoteles .carts h4{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+       
+}
+
+.hoteles .carts img{
+    width: 350px;
+    height:200px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.hoteles p{
+    color: black;
+}
+
+.hoteles button{
+    background-color: #2D6BF9;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
 }
 
 /************************************************************
