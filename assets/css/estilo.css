@@ -13,7 +13,7 @@ icono inicio
 *********************************************************/
 .posicion-inicio{
     position: fixed;
-    top: 90%;
+    top: 92%;
     left: 95%;
     width: 40px;
     height: 40px;
@@ -41,31 +41,101 @@ icono inicio
 CLASE HEADER
 ************************************************************/
 .header{
-    background-image:url("../img/header_imagen.jpg") ;
+    background-image:url("https://images.unsplash.com/photo-1473625247510-8ceb1760943f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=999&q=80") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     width: 100%;
     height: 800px;
     padding: 10px;
     color: white;
+    
    
    
 }
 
 
-.header nav ul{
+.header .container h2{
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    font-size: 18px;
+    
+}
+
+
+
+.header .container nav ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     width: 90%;
 }
 
-.header nav ul a{
-    margin:2px;
-    padding: 1px;
+.header .container nav ul a{
+    margin:5px;
+    padding: 5px;
+    font-size: 18px;
 }
 
-.header nav ul a:hover{
-    font-size: 20px;
+.header .container nav ul a:hover{
     border: 1px solid white;
+   
+}
+
+.header .formulario .bloque {
+    display:flex;
+    height: 650px;
+    align-items: center;         
+    flex-direction: column;        
+    justify-content: center; 
+    margin: 5px;
+    padding: 5px;       
+    
+}
+
+.header .formulario .form-enlinea{
+    display: inline;
+    border: 1px solid black;
+    background-color: white;
+    color:grey;
+    margin:0;
+    padding:0;
+    
+}
+
+.form-enlinea input{
+    height: 50px;
+    border: none;
+    margin:0;
+    padding:0;
+}
+.form-enlinea span{
+    text-align: center;
+    width: 50px;
+    border: none;
+}
+
+.form-enlinea a{
+    background-color: rgb(163, 36, 36);
+    color:white;
+    height: 100%;
+    width:100%;
+    margin:1px;
+    padding: 14px;
+    
+}
+
+.form-enlinea a:hover{
+    background-color: cadetblue;
+    
+}
+.header .formulario p{
+    color:white;        
+    font-size: 30px;        
+    text-shadow:2px 2px 4px #000000; 
+    padding: 17px; 
 }
 
 
@@ -107,7 +177,8 @@ CLASE Hoteles
 }
 
 .hoteles .carts section:hover{
-    
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
 }
 
 .hoteles .carts h4{
@@ -132,14 +203,19 @@ CLASE Hoteles
     color: black;
 }
 
-.hoteles button{
+.hoteles .carts section .contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.hoteles .boton{
+    width: 200px;
     background-color: #2D6BF9;
     color: white;
     margin-top: 10px;
-    padding: 10px;
+    padding: 7px;
     text-align: center;
-    display: flex;
-    justify-content: center;
     border-radius: 7px;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
@@ -147,21 +223,121 @@ CLASE Hoteles
     -o-border-radius: 7px;
 }
 
+.hoteles .boton:hover{
+    background-color:#f3aa9b;
+    border: 1px solid brown;
+    color: black;
+
+}
 /************************************************************
 CLASE Vuelos
 ************************************************************/
 .vuelos{
     background-image:url("../img/vuelos_css.jpg") ; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
     width: 100%;
     height: 800px;
 }
 
+.vuelos h1{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    padding: 7px;
+}
+.vuelos .carts{
+    margin-top: 50px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.vuelos .carts section{
+    margin:10px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.vuelos .carts section:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+.vuelos .carts h4{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+       
+}
+
+.vuelos .carts img{
+    width: 280px;
+    height:200px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.vuelos p{
+    color: black;
+    font-size: 12px;
+}
+
+.vuelos .carts section .contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.vuelos .boton{
+    width: 150px;
+    height: 30px;
+    background-color: #2D6BF9;
+    color: white;
+    margin-top: 10px;
+    padding: 7px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.vuelos .boton:hover{
+    background-color:#f3aa9b;
+    border: 1px solid brown;
+    color: black;
+
+}
 
 /************************************************************
 CLASE Vuelos
 ************************************************************/
 .contacto{
     background-image:url("../img/contact_css.jpg") ; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     width: 100%;
     height: 800px;
 }
