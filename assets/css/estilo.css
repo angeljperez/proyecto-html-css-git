@@ -12,13 +12,14 @@ body{
 icono inicio
 *********************************************************/
 
-/*.posicion-inicio{
+.posicion-inicio{
     position: fixed;
     top: 92%;
     left: 95%;
     width: 40px;
     height: 40px;
     text-align: center;
+    text-shadow:2px 2px 4px #000000;
     color: white;
     background-color:brown;
     border-radius: 6px;
@@ -28,10 +29,8 @@ icono inicio
     -o-border-radius: 6px;
 }
 
-.posicion-inicio a{
-    font-size: 40px;
-}*/
-/*.posicion-inicio .icono_inicio:hover {
+
+.posicion-inicio .icono_inicio:hover {
     border: 2px solid white;
     width: 40px;
     height: 40px;
@@ -41,7 +40,7 @@ icono inicio
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
 }
-*/
+
 /************************************************************
 CLASE HEADER
 ************************************************************/
@@ -85,11 +84,16 @@ CLASE HEADER
     margin:5px;
     padding: 5px;
     font-size: 18px;
+    text-shadow:2px 2px 4px #000000;
 }
 
 .header .container nav ul a:hover{
     border: 1px solid white;
    
+}
+
+.header .container .fondo-color:hover {
+    background-color: brown;
 }
 
 .header .formulario .bloque {
@@ -245,6 +249,8 @@ CLASE Vuelos
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    background-size: cover;
+
     
     width: 100%;
     height: 100%;
@@ -349,7 +355,7 @@ CLASE Vuelos
     background-image:url("../img/contact_css.jpg") ; 
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-position: center;
     width: 100%;
     height: 800px;
