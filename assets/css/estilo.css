@@ -239,7 +239,7 @@ CLASE Vuelos
     background-position: center;
     
     width: 100%;
-    height: 800px;
+    height: 100%;
 }
 
 .vuelos h1{
@@ -249,16 +249,21 @@ CLASE Vuelos
     margin: 10px;
     padding: 7px;
 }
+
 .vuelos .carts{
-    margin-top: 50px;
-    width: 800px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    
 }
 
+
 .vuelos .carts section{
+    
     margin:10px;
     padding: 10px;
     border: 1px solid black;
@@ -340,4 +345,83 @@ CLASE Vuelos
     background-position: center;
     width: 100%;
     height: 800px;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.contacto h4{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    border: 1px solid rgba(39, 39, 39, 0.658);
+    background-color: rgba(201, 196, 196, 0.603);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.contacto form{
+    padding: 10px;
+    width: 600px;
+    height: 400px;
+    background-color: rgba(201, 196, 196, 0.603);
+    margin: 10px;
+    border: 1px solid rgba(39, 39, 39, 0.658);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.contacto label{
+    font-size: 20px;
+    color: white;
+}
+
+.contacto input[type='text']{
+    width: 100%;
+    height: 60px;
+    margin-left: 2px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.contacto input[type='email']{
+    width: 100%;
+    height: 60px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.contacto input[type='button']{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    background-color: brown;
+    color: white;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.contacto input[type='Button']:hover{
+    background-color: rgba(67, 67, 241, 0.767);
 }
