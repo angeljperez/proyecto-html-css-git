@@ -11,7 +11,8 @@ body{
 /*********************************************************
 icono inicio
 *********************************************************/
-.posicion-inicio{
+
+/*.posicion-inicio{
     position: fixed;
     top: 92%;
     left: 95%;
@@ -26,7 +27,11 @@ icono inicio
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
 }
-.posicion-inicio .icono_inicio:hover {
+
+.posicion-inicio a{
+    font-size: 40px;
+}*/
+/*.posicion-inicio .icono_inicio:hover {
     border: 2px solid white;
     width: 40px;
     height: 40px;
@@ -36,7 +41,7 @@ icono inicio
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
 }
-
+*/
 /************************************************************
 CLASE HEADER
 ************************************************************/
@@ -48,7 +53,7 @@ CLASE HEADER
     background-position: center;
     width: 100%;
     height: 800px;
-    padding: 10px;
+    padding: 40px;
     color: white;
     
    
@@ -58,10 +63,13 @@ CLASE HEADER
 
 .header .container h2{
     position: absolute;
-    top: 10px;
+    top: 35px;
     left: 10%;
     font-size: 18px;
     
+}
+.header .container i{
+    font-size: 30px;
 }
 
 
