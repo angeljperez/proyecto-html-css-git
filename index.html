@@ -12,14 +12,14 @@
     <title>Travels</title>
 </head>
 <body>
-
+    <!-- icono inferior derecho para regresar al inicio -->
     <div class="posicion-inicio">
         <div class="icono_inicio">
             <a href="#inicio"><i class="icono-caretUp"></i><a>
         </div>
     </div>
     <div class="header" id="inicio">
-    
+    <!-- Navegador index.html -->
     <div class="container">
         <h2 class="titulo"><i class="fab fa-pushed"></i> Travel</h2>
         <nav>
@@ -31,14 +31,16 @@
            </ul> 
         </nav>
     </div>
-
+    <!-- formulario de busqueda viajes -->
     <div class="formulario">
         <div class="bloque">
         <p><b>A dónde quieres viajar?</b></p>
           <div class="form-enlinea">
+              <form action="index.html" method="GET">
              <span class="fas fa-search"></span>        
              <input type="text" id="dondev" placeholder="Mi próximo destino es?">  
-             <a href="#inicio?id=#dondev">Buscar</a>
+             <input type="submit" name="buscar" id="buscar" value="Buscar">
+             <!-- <a href="#inicio?id=#dondev">Buscar</a> -->
             </form>
           </div>        
         </div>
@@ -48,6 +50,7 @@
 
     
 </div>
+<!-- Inicio categoria de Hoteles -->
     <div class="hoteles" id="hotel">
         <div>
         <h1><strong>Hoteles</strong></h1>
@@ -65,7 +68,7 @@
             </p>
             </article>
             <div class="contenido">
-            <a class="boton" href="#">Mas Informacion</a>
+            <a class="boton" href="#hotel">Mas Informacion</a>
            </div>   
         </section>  
         
@@ -81,7 +84,7 @@
             </p>
             </article>
             <div class="contenido">
-                <a class="boton" href="#">Mas Informacion</a>
+                <a class="boton" href="#hotel">Mas Informacion</a>
             </div>      
         </section> 
         
@@ -97,7 +100,7 @@
             </p>
             </article>
             <div class="contenido">
-                <a class="boton" href="#">Mas Informacion</a>
+                <a class="boton" href="#hotel">Mas Informacion</a>
             </div>     
         </section> 
         
@@ -113,13 +116,13 @@
             </p>
             </article>
             <div class="contenido">
-                <a class="boton" href="#">Mas Informacion</a>
+                <a class="boton" href="#hotel">Mas Informacion</a>
             </div>      
         </section> 
     </div>
     
     </div>
-   
+   <!-- inicio Categoria Vuelos -->
     <div class="vuelos" id="fligh">
         <div>
             <h1><strong>Vuelos</strong></h1>
@@ -138,7 +141,7 @@
                 </p>
                 </article>
                 <div class="contenido">
-                <a class="boton" href="#">Mas Informacion</a>
+                <a class="boton" href="#fligh">Mas Informacion</a>
                </div>   
             </section>  
             
@@ -154,7 +157,7 @@
                 </p>
                 </article>
                 <div class="contenido">
-                    <a class="boton" href="#">Mas Informacion</a>
+                    <a class="boton" href="#fligh">Mas Informacion</a>
                 </div>      
             </section> 
             
@@ -170,7 +173,7 @@
                 </p>
                 </article>
                 <div class="contenido">
-                    <a class="boton" href="#">Mas Informacion</a>
+                    <a class="boton" href="#fligh">Mas Informacion</a>
                 </div>     
             </section> 
             
@@ -186,7 +189,7 @@
                 </p>
                 </article>
                 <div class="contenido">
-                    <a class="boton" href="#">Mas Informacion</a>
+                    <a class="boton" href="#fligh">Mas Informacion</a>
                 </div>      
             </section> 
 
@@ -202,7 +205,7 @@
                     </p>
                     </article>
                     <div class="contenido">
-                    <a class="boton" href="#">Mas Informacion</a>
+                    <a class="boton" href="#fligh">Mas Informacion</a>
                    </div>   
                 </section>  
                 
@@ -218,14 +221,14 @@
                     </p>
                     </article>
                     <div class="contenido">
-                        <a class="boton" href="#">Mas Informacion</a>
+                        <a class="boton" href="#fligh">Mas Informacion</a>
                     </div>      
                 </section> 
                 
                 
                 
     </div>
-    
+    <!-- inicio formulario de contacto -->
     <div class="contacto" id="contact">
      <h4><strong>CONTACTANOS</strong></h4>
 
